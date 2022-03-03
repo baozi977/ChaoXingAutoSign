@@ -33,12 +33,12 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         env:
-          USERNAME: ${{ secrets.13811180963 }}
-          PASSWORD: ${{ secrets.Baozi20050712 }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
           SENDKEY: ${{ secrets.SENDKEY }}
           TGCHATID: ${{ secrets.TGCHATID }}
           BOTTOKEN: ${{ secrets.BOTTOKEN }}
-          ADDRESS: ${{ secrets.石景山 }}
+          ADDRESS: ${{ secrets.ADDRESS }}
         run: |
           pip install lxml
           python ./AutoSign.py
